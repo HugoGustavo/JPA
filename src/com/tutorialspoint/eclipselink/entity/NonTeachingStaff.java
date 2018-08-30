@@ -1,10 +1,10 @@
 package com.tutorialspoint.eclipselink.entity;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 
 @Entity
-@DiscriminatorValue(value = "NS")
+@PrimaryKeyJoinColumn(referencedColumnName="sid")
 public class NonTeachingStaff extends Staff {
 	private static final long serialVersionUID = 1L;
 	private String areaExpertise;
