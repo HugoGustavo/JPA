@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Staff implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -21,7 +21,7 @@ public class Staff implements Serializable {
 	private int sid;
 	private String sname;
 	
-	public Staff(int sid, String sname) {
+	public Staff( int sid, String sname) {
 		super();
 		this.sid = sid;
 		this.sname = sname;
