@@ -19,9 +19,10 @@ public class Employee {
 	private double salary;
 	private String deg;
 	
+	/*
 	@ManyToOne
 	private Department department;
-	
+	*/
 	public Employee() {
 		super();
 	}
@@ -64,7 +65,7 @@ public class Employee {
 	public void setDeg(String deg) {
 		this.deg = deg;
 	}
-	
+	/*
 	public Department getDepartment() {
 		return department;
 	}
@@ -72,6 +73,7 @@ public class Employee {
 	public void setDepartment(Department department) {
 		this.department = department;
 	}
+	*/
 
 	
 	@Override
