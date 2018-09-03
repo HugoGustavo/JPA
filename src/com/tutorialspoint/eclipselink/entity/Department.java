@@ -1,12 +1,9 @@
 package com.tutorialspoint.eclipselink.entity;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 
 @Entity
 public class Department {
@@ -14,7 +11,7 @@ public class Department {
 	@GeneratedValue(strategy = GenerationType.AUTO )
 	private int id;
 	private String name;
-	
+	/*
 	@OneToMany( targetEntity = Employee.class )
 	private List employeeList;
 	
@@ -26,6 +23,7 @@ public class Department {
 		this.employeeList = employeeList;
 	}
 	
+	*/
 	public int getId() {
 		return id;
 	}

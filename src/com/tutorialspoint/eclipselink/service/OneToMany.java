@@ -43,7 +43,7 @@ public class OneToMany {
 		
 		Department department = new Department();
 		department.setName("Development");
-		department.setEmployeeList(employeeList);
+		// department.setEmployeeList(employeeList);
 		
 		entityManager.persist(department);
 		entityManager.getTransaction().commit();

@@ -4,8 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -23,6 +23,10 @@ public class Employee {
 	@ManyToOne
 	private Department department;
 	*/
+	
+	@OneToOne
+	private Department department;
+
 	public Employee() {
 		super();
 	}
@@ -74,7 +78,13 @@ public class Employee {
 		this.department = department;
 	}
 	*/
+	public Department getDepartment() {
+		return department;
+	}
 
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
 	
 	@Override
 	public String toString() {
