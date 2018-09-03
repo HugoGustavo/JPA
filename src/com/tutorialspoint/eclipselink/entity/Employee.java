@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
@@ -17,6 +18,9 @@ public class Employee {
 	private String ename;
 	private double salary;
 	private String deg;
+	
+	@ManyToOne
+	private Department department;
 	
 	public Employee() {
 		super();
@@ -60,6 +64,15 @@ public class Employee {
 	public void setDeg(String deg) {
 		this.deg = deg;
 	}
+	
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
 	
 	@Override
 	public String toString() {

@@ -13,6 +13,9 @@
 	<class>
 		com.tutorialspoint.eclipselink.entity.NonTeachingStaff
 	</class>
+	<class>
+		com.tutorialspoint.eclipselink.entity.Department
+	</class>
 	<properties>
 		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpadb"/>
 	    <property name="javax.persistence.jdbc.user" value="root"/>
